@@ -28,7 +28,7 @@ export const ContainerImg = styled.header`
   display: grid;
   place-items: center;
   & img {
-    width: 100px;
+    width: 150px;
     border-radius: 50%;
     box-shadow: 0px 22px 14px rgba(0, 0, 0, 0.02),
       0px 14px 14px rgba(0, 0, 0, 0.08), 0px 8px 12px rgba(0, 0, 0, 0.2),
