@@ -1,17 +1,17 @@
 import React from 'react';
 import * as S from './styles';
-import perfil1 from '../../assets/perfilEdit5.png';
+import perfil from '../../assets/perfilEdit3.png';
 
 export const TempComponent = (): React.ReactElement => {
   return (
     <S.Container>
       <S.ContainerContent>
         <S.ContainerImg>
-          <img src={perfil1} alt="Foto Perfil Wesley Silva" />
+          <img src={perfil} alt="Foto Perfil Wesley Silva" />
         </S.ContainerImg>
         <S.ContainerText>
           Página em construção, por gentileza acesse minha redes sociais para
-          contato ou Github para portfolio.
+          contato ou Github para portfólio.
         </S.ContainerText>
         <S.ContainerSocialMedias>
           <a href="https://www.linkedin.com/in/wesleyallan/">
