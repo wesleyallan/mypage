@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-synthesis: none;
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+  --background: #141A23;
+  --foreground: #0B0F15;
+  --primary: #F1F3F5;
+  --secondary: #DB4848;
+  --tertiary: #BC3E3E;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+/* Cabeçalho */
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 7rem;
+}
+
+.menu-wrapper {
+  width: fit-content;
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.menu-item {
+  list-style: none;
+  position: relative;
+}
+
+.menu-item::before {
+  content: '';
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background: url("/src/assets/underline-menu-item.svg") no-repeat;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover::before,
+.menu-item.active::before {
+  opacity: 1;
+}
