@@ -1,3 +1,39 @@
+@keyframes typeName {
+  0% {
+    width: 0;
+  }
+  16% {
+    width: 1ch;
+  }
+  32% {
+    width: 2ch;
+  }
+  48% {
+    width: 3ch;
+  }
+  64% {
+    width: 4ch;
+  }
+  80% {
+    width: 5ch;
+  }
+  100% {
+    width: fit-content;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -7,7 +43,7 @@ main {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 65rem;
   width: 100%;
   display: grid;
   gap: 2rem;
@@ -19,21 +55,30 @@ main {
   position: relative;
 }
 
-.container h1 span {
-  color: var(--secondary);
-}
-
 .container h1::before {
   content: '';
   position: absolute;
-  right: 0;
+  right: 10%;
   bottom: 0;
   transform: translateY(50%);
   width: 30rem;
   height: 100%;
-  background: url("/src/assets/home-underline.svg") no-repeat;
+  background: url('/src/assets/home-underline.svg') no-repeat;
   background-size: 100% 100%;
   z-index: -1;
+}
+.container h1 span {
+  display: inline-block;
+  position: relative;
+  color: var(--secondary);
+}
+
+.container h1 span::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  animation: blink 1s infinite;
 }
 
 .container p {
