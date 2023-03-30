@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/ico" href="/public/favicon.ico" />
     <link rel="stylesheet" href="/GlobalStyles.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script type="module" src="/main.js" defer></script>
     <title>Wesley Dev - Sobre</title>
   </head>
@@ -21,12 +21,16 @@
       <a class="logo" href="/index.html">
         <img
           src="/src/assets/logo.png"
-          alt="Logo do desenvolvedor Web Wesley
-        Silva"
+          alt="Logo do desenvolvedor Web Wesley Silva"
         />
       </a>
       <nav class="menu-wrapper">
-        <ul class="menu">
+        <div id="menu-toggle" class="menu-toggle">
+          <div class="menu-icon top"></div>
+          <div class="menu-icon center"></div>
+          <div class="menu-icon bottom"></div>
+        </div>
+        <ul id="menu" class="menu">
           <a href="/index.html"><li class="menu-item">Home</li></a>
           <a href="/src/pages/Portfolio/portfolio.html"
             ><li class="menu-item">Portfolio</li></a
