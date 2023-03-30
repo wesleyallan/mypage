@@ -1,0 +1,28 @@
+{
+  "techs": [
+    {
+      "name": "HTML",
+      "description": "Linguagem de marcação utilizada para estruturar documentos web",
+      "image": "/src/assets/html-icon.svg",
+      "state": "conheço"
+    },
+    {
+      "name": "CSS",
+      "image": "/src/assets/css-icon.svg",
+      "description": "Linguagem de folha de estilo para estilização de páginas web",
+      "state": "conheço"
+    },
+    {
+      "name": "JavaScript",
+      "image": "/src/assets/javascript-icon.svg",
+      "description": "Linguagem de programação para páginas web, atualmente atuando em todas areas",
+      "state": "conheço"
+    },
+    {
+      "name": "React",
+      "image": "/src/assets/react-icon.svg",
+      "description": "Biblioteca para desenvolvimento de interfaces reativas",
+      "state": "estudando"
+    }
+  ]
+}

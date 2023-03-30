@@ -14,11 +14,14 @@
 
 :root {
   font-size: 62.5%;
-  --background: #141A23;
-  --foreground: #0B0F15;
-  --primary: #F1F3F5;
-  --secondary: #DB4848;
-  --tertiary: #BC3E3E;
+  --background: #141a23;
+  --foreground: #0b0f15;
+  --border: #24282f;
+  --primary: #f1f3f5;
+  --secondary: #db4848;
+  --tertiary: #bc3e3e;
+  --quaternary: #0f9d58;
+  --quinary: #f9a825;
 }
 
 body {
@@ -103,7 +106,7 @@ header {
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
-  background: url("/src/assets/underline-menu-item.svg") no-repeat;
+  background: url('/src/assets/underline-menu-item.svg') no-repeat;
   opacity: 0;
   transition: all 0.2s ease;
 }

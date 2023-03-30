@@ -1,0 +1,63 @@
+main {
+  padding-top: 9.4rem;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+#techs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  padding: 1.6rem 2rem;
+  background-color: var(--foreground);
+  border: 0.2rem solid var(--border);
+  display: grid;
+  gap: 1.6rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  margin: 0 auto;
+}
+
+.card .card-body {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.card .card-body h5 {
+  text-align: center;
+}
+
+.card .card-body p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.conheço {
+  color: var(--quaternary);
+}
+
+.estudando {
+  color: var(--quinary);
+}

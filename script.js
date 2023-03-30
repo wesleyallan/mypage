@@ -8,5 +8,5 @@ name.forEach((letter, index) => {
       return;
     }
     myName.innerHTML += letter;
-  }, 800 * index);
+  }, 550 * index);
 });
