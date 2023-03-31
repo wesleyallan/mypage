@@ -1,0 +1,60 @@
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.content-wrapper {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(15rem, 25rem));
+}
+
+.img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+
+.content p {
+  margin-bottom: 0.8rem;
+}
+
+dt ~ dt {
+  margin-top: 0.8rem;
+}
+
+dd {
+  margin-left: 0.8rem;
+}
+
+@media (max-width: 380px) {
+  main {
+    padding-top: 25rem;
+    overflow: scroll;
+  }
+
+  .container {
+    margin-inline: 10%;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

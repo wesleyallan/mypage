@@ -32,7 +32,8 @@ main {
   transition: all 0.7s ease;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   transform: scale(1.1);
 }
 
@@ -60,4 +61,11 @@ main {
 
 .estudando {
   color: var(--quinary);
+}
+
+@media (max-width: 380px) {
+  main {
+    padding-top: 20rem;
+    overflow: scroll;
+  }
 }
