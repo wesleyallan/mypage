@@ -32,6 +32,19 @@ body {
   color: var(--primary);
 }
 
+body::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--foreground);
+  border-radius: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
 /* Cabeçalho */
 
 header {
@@ -90,16 +103,16 @@ header {
 }
 
 .menu a {
+  position: relative;
   text-decoration: none;
   color: var(--primary);
 }
 
 .menu-item {
   list-style: none;
-  position: relative;
 }
 
-.menu-item::before {
+.menu-item a::before {
   content: '';
   width: 5rem;
   height: 2rem;
@@ -111,8 +124,8 @@ header {
   transition: all 0.2s ease;
 }
 
-.menu-item:hover::before,
-.menu-item.active::before {
+.menu-item a:hover::before,
+.menu-item a.active::before {
   opacity: 1;
 }
 

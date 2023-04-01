@@ -47,7 +47,21 @@ dd {
 @media (max-width: 380px) {
   main {
     padding-top: 25rem;
-    overflow: scroll;
+    overflow-y: scroll;
+  }
+
+  main::-webkit-scrollbar {
+    width: 1.2rem;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
+    border-radius: 0.4rem;
+    color: var(--secondary);
+  }
+
+  main::-webkit-scrollbar-track {
+    background: var(--background);
   }
 
   .container {
