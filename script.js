@@ -1,3 +1,10 @@
+function redirect() {
+  window.open('https://github.com/wesleyallan', '_blank');
+}
+
+const button = document.getElementById('button');
+button.onclick = redirect;
+
 const name = Array.from('Wesley');
 const myName = document.getElementById('myName');
 
