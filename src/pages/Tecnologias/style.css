@@ -1,8 +1,8 @@
 main {
-  padding-top: 9.4rem;
+  padding-top: 10rem;
   height: 100vh;
   display: grid;
-  place-content: center;
+  justify-content: center;
 }
 
 .container {
@@ -65,7 +65,20 @@ main {
 
 @media (max-width: 380px) {
   main {
-    padding-top: 20rem;
-    overflow: scroll;
+    overflow-y: scroll;
+  }
+
+  main::-webkit-scrollbar {
+    width: 1.2rem;
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: var(--foreground);
+    border-radius: 0.4rem;
+    color: var(--secondary);
+  }
+
+  main::-webkit-scrollbar-track {
+    background: var(--background);
   }
 }
