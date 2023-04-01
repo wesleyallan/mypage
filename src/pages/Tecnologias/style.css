@@ -1,11 +1,15 @@
+body {
+  overflow-y: scroll;
+}
+
 main {
-  padding-top: 10rem;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   justify-content: center;
 }
 
 .container {
+  margin-top: 10rem;
   display: grid;
   gap: 1.6rem;
 }
@@ -64,21 +68,7 @@ main {
 }
 
 @media (max-width: 380px) {
-  main {
-    overflow-y: scroll;
-  }
-
-  main::-webkit-scrollbar {
-    width: 1.2rem;
-  }
-
-  main::-webkit-scrollbar-thumb {
-    background-color: var(--foreground);
-    border-radius: 0.4rem;
-    color: var(--secondary);
-  }
-
-  main::-webkit-scrollbar-track {
-    background: var(--background);
+  .container {
+    margin-inline: 1rem;
   }
 }

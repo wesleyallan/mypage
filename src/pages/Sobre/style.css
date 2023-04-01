@@ -1,12 +1,18 @@
+body {
+  overflow-y: scroll;
+}
+
 main {
   display: grid;
-  place-content: center;
-  height: 100vh;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .container {
+  margin-top: 10rem;
   display: grid;
   gap: 1.6rem;
+  height: fit-content;
 }
 
 .container h1 {
@@ -45,25 +51,6 @@ dd {
 }
 
 @media (max-width: 380px) {
-  main {
-    padding-top: 25rem;
-    overflow-y: scroll;
-  }
-
-  main::-webkit-scrollbar {
-    width: 1.2rem;
-  }
-
-  main::-webkit-scrollbar-thumb {
-    background-color: var(--foreground);
-    border-radius: 0.4rem;
-    color: var(--secondary);
-  }
-
-  main::-webkit-scrollbar-track {
-    background: var(--background);
-  }
-
   .container {
     margin-inline: 10%;
   }
