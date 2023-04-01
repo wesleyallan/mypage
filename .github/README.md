@@ -38,7 +38,6 @@ Tecnologias utilizadas no desenvolvimento no código do projeto.
 - Web APIs
   - Fetch
   - FormData
-  - IntersectionObserver
 
 ## 🔧 Ferramentas
 
