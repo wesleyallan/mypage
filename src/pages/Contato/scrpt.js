@@ -1,5 +1,3 @@
-const form = document.getElementById('form');
-
 function nameValidation(e) {
   if (e.target.value.length === 0) {
     e.target.classList.add('error');
@@ -45,6 +43,8 @@ function handleSubmit(e) {
   Mensagem enviada com sucesso!
   Obrigado ${formInfos.get('name')}`);
 }
+
+const form = document.getElementById('form');
 
 form.addEventListener('submit', handleSubmit);
 form.name.onblur = nameValidation;
