@@ -85,12 +85,8 @@ main {
   font-size: 2.4rem;
 }
 
-.container a {
-  margin: 2rem auto;
-  text-decoration: none;
-}
-
 .container button {
+  margin: 2rem auto;
   padding: 1.2rem 2rem;
   display: flex;
   align-items: center;
