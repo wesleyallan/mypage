@@ -1,0 +1,59 @@
+body {
+  overflow-y: scroll;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#container {
+  margin-top: 12rem;
+  padding: 0 4rem;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  display: grid;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.HTML {
+  color: #e34c26;
+}
+
+.CSS {
+  color: #264de4;
+}
+
+.JavaScript {
+  color: #f0db4f;
+}
+
+.TypeScript {
+  color: #3178c6;
+}
