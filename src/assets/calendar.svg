@@ -1,12 +1,1 @@
-<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_1_216" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
-<path d="M16 0.8125H0V16.8125H16V0.8125Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_1_216)">
-<path d="M12 4.14575H3.99996C3.26358 4.14575 2.66663 4.74271 2.66663 5.47909V13.4791C2.66663 14.2155 3.26358 14.8124 3.99996 14.8124H12C12.7363 14.8124 13.3333 14.2155 13.3333 13.4791V5.47909C13.3333 4.74271 12.7363 4.14575 12 4.14575Z" stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.6666 2.8125V5.47917" stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.33337 2.8125V5.47917" stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.66663 8.14575H13.3333" stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.66671 10.8125H5.33337V12.1458H6.66671V10.8125Z" stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17"><mask id="mask0_1_216" style="mask-type:luminance" width="16" height="17" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#fff" d="M16 0.8125H0V16.8125H16V0.8125Z"/></mask><g mask="url(#mask0_1_216)"><path stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round" d="M12 4.14575H3.99996C3.26358 4.14575 2.66663 4.74271 2.66663 5.47909V13.4791C2.66663 14.2155 3.26358 14.8124 3.99996 14.8124H12C12.7363 14.8124 13.3333 14.2155 13.3333 13.4791V5.47909C13.3333 4.74271 12.7363 4.14575 12 4.14575Z"/><path stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round" d="M10.6666 2.8125V5.47917"/><path stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round" d="M5.33337 2.8125V5.47917"/><path stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round" d="M2.66663 8.14575H13.3333"/><path stroke="#CED4DA" stroke-linecap="round" stroke-linejoin="round" d="M6.66671 10.8125H5.33337V12.1458H6.66671V10.8125Z"/></g></svg>
