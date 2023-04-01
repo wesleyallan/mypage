@@ -8,21 +8,7 @@ async function getTechData() {
   }
 }
 
-async function renderTechs() {
-  try {
-    const techs = await getTechData();
-    const techsContainer = document.getElementById('techs-container');
-    techs.forEach((tech) => {
-      const card = createCard(tech);
-      techsContainer.appendChild(card);
-    });
-  } catch (err) {
-    console.log(err.message);
-  }
-}
-
 function createCard(tech) {
-  console.log(tech);
   const card = document.createElement('article');
   card.classList.add('card');
 
@@ -55,6 +41,19 @@ function createCard(tech) {
   card.appendChild(cardBody);
 
   return card;
+}
+
+async function renderTechs() {
+  try {
+    const techs = await getTechData();
+    const techsContainer = document.getElementById('techs-container');
+    techs.forEach((tech) => {
+      const card = createCard(tech);
+      techsContainer.appendChild(card);
+    });
+  } catch (err) {
+    console.log(err.message);
+  }
 }
 
 renderTechs();
