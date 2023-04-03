@@ -9,6 +9,7 @@ main {
 }
 
 .container {
+  height: fit-content;
   margin-top: 10rem;
   display: grid;
   gap: 1.6rem;
