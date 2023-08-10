@@ -31,19 +31,6 @@ function messageValidation(e) {
   }
 }
 
-function handleSubmit(e) {
-  e.preventDefault();
-  const inputs = [form.name, form.email, form.message];
-  if (inputs.some((input) => input.classList.contains('error'))) {
-    alert('Preencha os campos corretamente');
-    return;
-  }
-  const formInfos = new FormData(e.target);
-  alert(`
-  Mensagem enviada com sucesso!
-  Obrigado ${formInfos.get('name')}`);
-}
-
 const form = document.getElementById('form');
 
 form.addEventListener('submit', handleSubmit);
